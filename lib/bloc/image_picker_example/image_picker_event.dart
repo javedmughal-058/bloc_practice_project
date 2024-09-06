@@ -11,5 +11,6 @@ abstract class ImagePickerEvent extends Equatable{
 
 }
 
+class ClearImageEvent extends ImagePickerEvent{}
 class PickImageFromCamera extends ImagePickerEvent{}
 class PickImageFromGallery extends ImagePickerEvent{}

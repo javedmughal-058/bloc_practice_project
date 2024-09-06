@@ -1,4 +1,5 @@
 import 'package:bloc_practice_project/ui/slider_page.dart';
+import 'package:bloc_practice_project/ui/todo_page.dart';
 import 'package:bloc_practice_project/utils/navigator.dart';
 import 'package:bloc_practice_project/ui/counter_page.dart';
 import 'package:bloc_practice_project/ui/widgets/app_bar_widget.dart';
@@ -29,7 +30,7 @@ class HomePage extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 HomeItemWidget(title: 'Image Picker', onTap: ()=> context.push(const ImagePickerPage())),
-                HomeItemWidget(title: 'CRUD (List)', onTap: (){}),
+                HomeItemWidget(title: 'Todo Example', onTap: ()=> context.push(const TodoPage())),
               ],
             ),
           ],
