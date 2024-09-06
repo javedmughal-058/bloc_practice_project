@@ -5,6 +5,8 @@ import 'package:bloc_practice_project/ui/widgets/app_bar_widget.dart';
 import 'package:bloc_practice_project/ui/widgets/home_item_widget.dart';
 import 'package:flutter/material.dart';
 
+import 'image_picker_page.dart';
+
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
@@ -26,7 +28,7 @@ class HomePage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                HomeItemWidget(title: 'Image Picker', onTap: (){}),
+                HomeItemWidget(title: 'Image Picker', onTap: ()=> context.push(const ImagePickerPage())),
                 HomeItemWidget(title: 'CRUD (List)', onTap: (){}),
               ],
             ),
