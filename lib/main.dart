@@ -32,6 +32,7 @@ class MyApp extends StatelessWidget {
           secondaryHeaderColor: Colors.amber,
           dividerColor: Colors.white,
           useMaterial3: true,
+          brightness: Brightness.dark
         ),
         home: const HomePage(),
       ),

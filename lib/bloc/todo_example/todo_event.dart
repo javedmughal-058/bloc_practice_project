@@ -11,7 +11,6 @@ class AddTodoEvent extends TodoEvent{
   const AddTodoEvent({required this.task});
 
   @override
-  // TODO: implement props
   List<Object?> get props => [task];
 }
 class RemoveTodoEvent extends TodoEvent{
@@ -20,6 +19,5 @@ class RemoveTodoEvent extends TodoEvent{
   const RemoveTodoEvent({required this.task});
 
   @override
-  // TODO: implement props
   List<Object?> get props => [task];
 }

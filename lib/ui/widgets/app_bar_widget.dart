@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 AppBar appBarWidget(context, { String? title, List<Widget>? action }) => AppBar(
-  backgroundColor: Theme.of(context).primaryColor,
+  // backgroundColor: Theme.of(context).primaryColor,
   centerTitle: title == null ? true : false,
   title: title == null
       ? RichText(

@@ -19,8 +19,8 @@ class TodoBloc extends Bloc<TodoEvent, TodoState>{
     todoList.add(event.task);
     emit(state.copyWith(todoList: List.from(todoList), isLoading: false));
   }
+
   void _removeTodoItem(RemoveTodoEvent event, Emitter<TodoState> emit) {
-    print("removing");
     todoList.remove(event.task);
     emit(state.copyWith(todoList: List.from(todoList), isLoading: false));
   }

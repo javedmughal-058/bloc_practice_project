@@ -16,16 +16,16 @@ class HomeItemWidget extends StatelessWidget {
         height: size.height * 0.1,
         alignment: Alignment.center,
         padding: EdgeInsets.all(kPadding / 4),
-        margin: EdgeInsets.symmetric(vertical: kPadding / 4),
+        margin: EdgeInsets.symmetric(vertical: kPadding / 2),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(5),
-          color: Colors.white,
+          color: Theme.of(context).colorScheme.secondaryContainer,
           boxShadow: [
             BoxShadow(
-              color: Colors.grey.shade300,
-              spreadRadius: 2,
-              blurRadius: 2,
-              offset: const Offset(-1, 1)
+              color: Theme.of(context).colorScheme.secondaryContainer.withOpacity(0.5),
+              spreadRadius: 1,
+              blurRadius: 1,
+              offset: const Offset(-5, 1)
             ),
           ]
         ),
