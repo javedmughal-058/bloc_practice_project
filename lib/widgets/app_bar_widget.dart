@@ -12,4 +12,5 @@ AppBar appBarWidget(context, { String? title, List<Widget>? action }) => AppBar(
           ]
       ))
       : Text(title, style: Theme.of(context).textTheme.titleMedium),
+  actions: action,
 );
